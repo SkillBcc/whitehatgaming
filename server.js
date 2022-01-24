@@ -3,10 +3,10 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static(__dirname + '/dist/WhiteHatGamin'));
+app.use(express.static(__dirname + '/dist/WhiteHatGaming'));
 
 app.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname + '/dist/WhiteHatGamin/index.html'));
+    res.sendFile(path.join(__dirname + '/dist/WhiteHatGaming/index.html'));
 });
 
 app.listen(process.env.PORT || 8080);
