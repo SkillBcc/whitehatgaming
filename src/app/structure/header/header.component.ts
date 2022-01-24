@@ -10,7 +10,7 @@ import { Subscription } from 'rxjs';
 export class HeaderComponent implements OnInit {
   private _events: Subscription;
   menuOpened: boolean = false;
-  activateRoute: string;
+  activateRoute: string = 'top';
   headers: string[] = [
     'top',
     'new',
@@ -29,7 +29,7 @@ export class HeaderComponent implements OnInit {
   ) {
     this._events = this.router.events.subscribe((val) => {
       if (val instanceof NavigationEnd) {
-        this.activateRoute = val.url.replace('/','')
+        this.activateRoute = val.url != '/' ? val.url.replace('/','') : 'top';
       }
     });
   }
