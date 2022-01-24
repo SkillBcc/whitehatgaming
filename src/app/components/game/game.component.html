@@ -1,0 +1,11 @@
+<div class="game">
+    <div class="game-core" [ngStyle]="{'background-image': 'url(' + game.image + ')'}">
+        <img class="play" src="assets/images/play.png">
+        <div class="name">{{game.name}}</div>
+        <div class="jackpots" *ngIf="game.jackspot">{{game.jackspot | currency}}</div>
+    </div>
+    <div class="ribbon" *ngIf="ribbon" class="ribbon">
+        <img src="assets/images/ribbon.png">
+        <div class="label">{{ribbon}}</div>
+    </div>
+</div>

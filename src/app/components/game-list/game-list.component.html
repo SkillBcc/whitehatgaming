@@ -1,0 +1,6 @@
+<div class="game-list">
+    <div class="game-list-content">
+        <app-game *ngFor="let game of games" [game]="game"></app-game>
+        <div class="no-games" *ngIf="!games.length">{{'GLOBAL.nogames' | translate}}</div>
+    </div>
+</div>

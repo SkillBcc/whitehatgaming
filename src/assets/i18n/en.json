@@ -1,0 +1,19 @@
+{
+    "GLOBAL": {
+        "nogames": "No Games"
+    },
+    "HEADER": {
+        "TITLE": {
+            "top": "Top Games",
+            "new": "New Games",
+            "slots": "Slots",
+            "jackpots": "Jackpots",
+            "live": "Live",
+            "blackjack": "Blackjack",
+            "roulette": "Roulette",
+            "table": "Table",
+            "poker": "Poker",
+            "other": "Other"
+        }
+    }
+}

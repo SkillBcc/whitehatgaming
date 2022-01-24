@@ -1,0 +1,16 @@
+:root {
+    --primary: #8DC63F;
+    --primary-rgb: 141, 198, 63;
+    --gray-0: #FFFFFF;
+    --gray-0-rgb: 255, 255, 255;
+    --gray-1: #FCFCFC;
+    --gray-1-rgb: 252, 252, 252;
+    --gray-2: #373737;
+    --gray-2-rgb: 55, 55, 55;
+    --gray-10: #000000;
+    --gray-10-rgb: 0, 0, 0;
+    --white: var(--gray-0);
+    --white-rgb: var(--gray-0-rgb);
+    --black: var(--gray-10);
+    --black-rgb: var(--gray-10-rgb);
+}

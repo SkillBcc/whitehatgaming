@@ -1,0 +1,11 @@
+<div class="header">
+    <div class="item-mobile">
+        <button (click)="toogleMenu();" mat-icon-button>
+            <mat-icon>{{menuOpened ? 'close' : 'menu'}}</mat-icon>
+        </button>
+        <div class="title">{{'HEADER.TITLE.' + activateRoute | translate}}</div>
+    </div>
+    <div class="itens" [ngClass]="{'opened': menuOpened}">
+        <div (click)="toogleMenu();" class="item" [ngClass]="{'activated': activateRoute === item}" [routerLink]="['/' + item]" *ngFor="let item of headers"><span class="label">{{'HEADER.TITLE.' + item | translate}}</span></div>
+    </div>
+</div>

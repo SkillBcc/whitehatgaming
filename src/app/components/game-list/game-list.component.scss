@@ -1,0 +1,25 @@
+.game-list {
+    width: 100vw;
+    height: calc(100vh - 50px);
+    overflow: auto;
+    .game-list-content {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        max-width: 1060px;
+        .no-games {
+            font-size: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 197px;
+            height: 117px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto 0 auto;
+            border-radius: 14px;
+            border: 1px solid rgba(var(--black-rgb), .1);
+        }
+    }
+}
