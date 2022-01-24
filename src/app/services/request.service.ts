@@ -18,7 +18,7 @@ export class RequestService {
   private _getOptions() {
     const headers = new HttpHeaders({ 
       // 'Authorization': this._getAuthorization()
-      'Content-Type': 'text/plain'
+      // 'Content-Type': 'text/plain'
     });
     return { headers: headers };
   }
